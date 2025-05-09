@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+# Quick rule replacements for common infractions
+matches:
+  - trigger: "::coc"
+    replace: "[Code of Conduct](<https://allthingslinux.org/code-of-conduct>)"
+
+  - trigger: "::nsfw"
+    replace: "[1.1]"
+
+  - trigger: "::age"
+    replace: "[1.2]"
+
+  - trigger: "::racism"
+    replace: "[1.3]"
+
+  - trigger: "::elitism"
+    replace: "[1.5]"
+
+  - trigger: "::yarr"
+    replace: "[1.7]"
+
+  - trigger: "::lq"
+    replace: "[2.2]"
+
+  - trigger: "::vc"
+    replace: "[2.3]"
+
+  - trigger: "::spam"
+    replace: "[2.6]"
+
+  - trigger: "::scam"
+    replace: "[2.7]"
+
+  - trigger: "::ads"
+    replace: "[2.8]"
+
+  - trigger: "::doxx"
+    replace: "[2.9]"
