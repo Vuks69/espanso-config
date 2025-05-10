@@ -1,8 +1,39 @@
+# espanso match file
 # yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
 # Quick rule replacements for common infractions
 matches:
   - trigger: "::coc"
     replace: "[Code of Conduct](<https://allthingslinux.org/code-of-conduct>)"
+
+  - trigger: "::rule"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "NSFW"
+              id: "[1.1]"
+            - label: "Under 13"
+              id: "[1.2]"
+            - label: "Racism"
+              id: "[1.3]"
+            - label: "Elitism"
+              id: "[1.5]"
+            - label: "Piracy"
+              id: "[1.7]"
+            - label: "Low Quality"
+              id: "[2.2]"
+            - label: "Voice Chat"
+              id: "[2.3]"
+            - label: "Spam"
+              id: "[2.6]"
+            - label: "Scam links"
+              id: "[2.7]"
+            - label: "Advertisements"
+              id: "[2.8]"
+            - label: "Doxxing"
+              id: "[2.9]"
 
   - trigger: "::nsfw"
     replace: "[1.1]"
