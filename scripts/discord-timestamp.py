@@ -1,6 +1,4 @@
 import dateparser
-
-# import datetime
 import sys
 
 if len(sys.argv) < 2:

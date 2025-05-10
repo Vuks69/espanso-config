@@ -1,34 +1,15 @@
 # espanso match file
-
 # For a complete introduction, visit the official docs at: https://espanso.org/docs/
-
-# You can use this file to define the base matches (aka snippets)
-# that will be available in every application when using espanso.
-
-# Matches are substitution rules: when you type the "trigger" string
-# it gets replaced by the "replace" string.
-
 # yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
 
 matches:
-  # Simple text replacement
-  # - trigger: ":espanso"
-  #   replace: "Hi there!"
+  # For more information, visit the docs: https://espanso.org/docs/
 
-  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+  - trigger: "::espanso"
+    replace: "I use [Espanso](https://espanso.org) to make my life easier. It's a text expander that works on all platforms and is open source."
 
-  # But matches can also be dynamic:
-
-  # Print the output of a shell command
-  # - trigger: ":shell"
-  #   replace: "{{output}}"
-  #   vars:
-  #     - name: output
-  #       type: shell
-  #       params:
-  #         cmd: "echo $pwd"
-
-  # And much more! For more information, visit the docs: https://espanso.org/docs/
+  - trigger: "::nixos"
+    replace: "[my nixos config](<https://github.com/Vuks69/nixos-config>)"
 
   # Print the current date
   - trigger: "::date"
