@@ -15,7 +15,7 @@ matches:
   # For more information, visit the docs: https://espanso.org/docs/
 
   - trigger: "::espanso"
-    replace: "I use [Espanso](https://espanso.org), it's a text expander that works on all platforms and is open source. You can see my config [here](<https://github.com/Vuks69/espanso-config>)."
+    replace: "I use [Espanso](<https://espanso.org>), it's a text expander that works on all platforms and is open source. You can see my config [here](<https://github.com/Vuks69/espanso-config>)."
 
   - trigger: "::nixos"
     replace: "[my nixos config](<https://github.com/Vuks69/nixos-config>)"
