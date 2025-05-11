@@ -1,0 +1,39 @@
+matches:
+  # gets the discord timestamp
+  # format is <t:1745788907:R>, replace middle with unix timestamp, :R with appropriate format
+  # https://dateparser.readthedocs.io/en/latest/
+  # https://gist.github.com/LeviSnoot/d9147767abeef2f770e9ddcd91eb85aa
+  - trigger: "::ts"
+    replace: "{{discord_ts}}"
+    vars:
+      - name: timestamp_form
+        type: form
+        params:
+          layout: |
+            Please enter the date you want to convert to a discord timestamp:
+            [[time]]
+
+            Please select the format:
+            [[fmt]]
+          fields:
+            time:
+              multiline: false
+            fmt:
+              type: choice
+              values:
+                - "Relative Time | 3 years ago"
+                - "Default | 28 November 2018 09:01"
+                - "Short | Time 09:01"
+                - "Long | 09:01:00"
+                - "Short Date | 28/11/2018"
+                - "Long Date | 28 November 2018"
+                - "Short Date/Time | 28 November 2018 09:01"
+                - "Long Date/Time | Wednesday, 28 November 2018 09:01"
+      - name: discord_ts
+        type: script
+        params:
+          args:
+            - python
+            - "%CONFIG%\\scripts\\discord-timestamp.py"
+            - "{{timestamp_form.time}}"
+            - "{{timestamp_form.fmt}}"
