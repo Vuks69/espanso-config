@@ -2,6 +2,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
 # Quick rule replacements for common infractions
 matches:
+  - trigger: "::welc"
+    replace: "$s welcome to ATL! :)"
+
   - trigger: "::coc"
     replace: "[Code of Conduct](<https://allthingslinux.org/code-of-conduct>)"
 
