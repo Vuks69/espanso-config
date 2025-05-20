@@ -21,15 +21,25 @@ matches:
               id: "[1.2]"
             - label: "Racism"
               id: "[1.3]"
+            - label: "Controversial topics"
+              id: "[1.4]"
             - label: "Elitism"
               id: "[1.5]"
             - label: "Piracy"
               id: "[1.7]"
+            - label: "Disrespecting autority"
+              id: "[1.6]"
+            - label: "Non-English"
+              id: "[2.1]"
             - label: "Low Quality"
               id: "[2.2]"
             - label: "Voice Chat"
               id: "[2.3]"
-            - label: "Spam"
+            - label: "Bot usage"
+              id: "[2.4]"
+            - label: "Off-topic"
+              id: "[2.5]"
+            - label: "Spamming"
               id: "[2.6]"
             - label: "Scam links"
               id: "[2.7]"
@@ -47,17 +57,32 @@ matches:
   - trigger: "::racism"
     replace: "[1.3]"
 
+  - trigger: "::controv"
+    replace: "[1.4]"
+
   - trigger: "::elitism"
     replace: "[1.5]"
 
-  - trigger: "::yarr"
+  - trigger: "::auth"
+    replace: "[1.6]"
+
+  - trigger: "::piracy"
     replace: "[1.7]"
+
+  - trigger: "::eng"
+    replace: "[2.1]"
 
   - trigger: "::lq"
     replace: "[2.2]"
 
   - trigger: "::vc"
     replace: "[2.3]"
+
+  - trigger: "::bots"
+    replace: "[2.4]"
+
+  - trigger: "::offt"
+    replace: "[2.5]"
 
   - trigger: "::spam"
     replace: "[2.6]"
