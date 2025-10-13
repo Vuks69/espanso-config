@@ -34,6 +34,6 @@ matches:
         params:
           args:
             - python
-            - "%CONFIG%\\scripts\\discord-timestamp.py"
+            - "%CONFIG%/scripts/discord-timestamp.py"
             - "{{timestamp_form.time}}"
             - "{{timestamp_form.fmt}}"
