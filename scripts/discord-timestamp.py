@@ -1,6 +1,7 @@
 import dateparser
 import sys
 import warnings
+
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 label_to_format = {
@@ -11,7 +12,7 @@ label_to_format = {
     "Short Date | 28/11/2018": "d",
     "Long Date | 28 November 2018": "D",
     "Short Date/Time | 28 November 2018 09:01": "f",
-    "Long Date/Time | Wednesday, 28 November 2018 09:01": "F"
+    "Long Date/Time | Wednesday, 28 November 2018 09:01": "F",
 }
 
 if len(sys.argv) < 3:
