@@ -33,7 +33,7 @@ matches:
         type: script
         params:
           args:
-            - python
-            - "%CONFIG%/scripts/discord-timestamp.py"
+            - "%CONFIG%/python-scripts/.venv/bin/python"
+            - "%CONFIG%/python-scripts/discord-timestamp.py"
             - "{{timestamp_form.time}}"
             - "{{timestamp_form.fmt}}"
