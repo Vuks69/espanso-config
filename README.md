@@ -70,7 +70,3 @@ Notes:
 ## Contributing
 
 This is a personal configuration but contributions and suggestions are welcome. If you make improvements, please open an issue or pull request describing the change.
-
-## License
-
-No license is specified. If you want to reuse these files, please get permission or add a license to this repository.
